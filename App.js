@@ -23,7 +23,7 @@ import axios from 'axios';
         try {
           // Processar a resposta
           const response = await api.get('/filmes').then((response) => {
-            console.log(response.data);
+            //console.log(response.data);
             setFilmes(response.data);
           });
           
@@ -53,7 +53,8 @@ import axios from 'axios';
        <Text>FILMES</Text>
        <FlatList
         data={filmes}
-        renderItem={({item}) => <Filmes/> }
+        keyExtractor={ item => String(item.id)}
+        renderItem={({item}) => <Filmes data={item}/> }
        />
       </View>
     );
