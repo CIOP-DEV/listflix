@@ -11,14 +11,17 @@
 
 ## Terminal
  ```JS
-//Iniciando projeto
+//Iniciando projeto, instalar expo
+npm i -g expo
+
 //Cria um novo projeto expo
 npx create-expo-app
 
-//Rodar o projeto
-npm expo start
+//Executar o projeto
+npx expo start
 
-
+//Axios
+yarn add axios
 
 ```
 
