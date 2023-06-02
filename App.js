@@ -4,12 +4,8 @@ import { StyleSheet, Text, View, FlatList } from 'react-native';
 import api from './src/services/api';
 import Filmes from './src/Filmes';
 
-import axios from 'axios';
-
 //export default class App extends Componet {
   export default function App() {
-
-    
 
     //Estado para armazenar os dados
     const [filmes, setFilmes] = useState([]);
